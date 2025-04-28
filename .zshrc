@@ -18,7 +18,7 @@ unset __conda_setup
 # -----------------------------
 alias ll="ls -lah"
 alias gs="git status"
-alias ga="git add"
+alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push"
 alias gpull="git pull"
