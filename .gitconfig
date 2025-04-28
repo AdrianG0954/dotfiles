@@ -1,0 +1,13 @@
+[user]
+    name = Adrian Garcia
+    email = adrianrgarcia010@gmail.com
+
+[core]
+    autocrlf = input
+
+[color]
+    ui = auto
+
+[push]
+    default = current
+    autoSetupRemote = true
