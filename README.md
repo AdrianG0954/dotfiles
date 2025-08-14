@@ -1,7 +1,8 @@
 # Dotfiles
 
+**FYI: As my developer workflow is bound to change, so is this repo :)** 
+
 ## Prerequisites
-As my developer workflow is bound to change, so is this repo :)
 
 First, lets get the basics out the way:
 ```
