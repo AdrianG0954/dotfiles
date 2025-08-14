@@ -1,4 +1,34 @@
 [user]
-	email = adrianrgarcia010@gmail.com
-	name = Adrian Garcia
+    email = adrianrgarcia010@gmail.com
+    name  = Adrian Garcia
 
+[init]
+    defaultBranch = main
+
+[push]
+    default          = simple
+    autoSetupRemote  = true
+
+[pull]
+    rebase = true
+
+[merge]
+    conflictstyle = zdiff3
+
+[color]
+    ui     = auto
+    branch = auto
+    diff   = auto
+    status = auto
+
+[alias]
+    sw        = switch
+    cob       = checkout -b
+    rmb       = branch -d
+    discard   = reset HEAD --hard
+    amend     = commit --amend
+    p         = push
+    pf        = push --force-with-lease
+    s         = status
+    unstage   = reset HEAD --
+    uncommit  = reset --soft HEAD^
