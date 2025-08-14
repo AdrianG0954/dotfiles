@@ -38,7 +38,7 @@ Once thats all done :p, we can actually start setting up the dotfiles.
 
 Setting up should be as easy as cloning the repo, setting up the smylinks, and boom!
 
-**Important Note:** in order to properly link, stow expects your files to have the same structure as those in the `HOME` folder would. What that means is if your `.zshrc` is stuctured as `~/.zshrc`, then yours will have to be `dotfiles_example/.zshrc`. For a more detailed explanation see [here]([url](https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html)).
+**Important Note:** in order to properly link, stow expects your files to have the same structure as those in the `HOME` folder would. What that means is if your `.zshrc` is stuctured as `~/.zshrc`, then yours will have to be `dotfiles_example/.zshrc`. For a more detailed explanation see [here](https://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html).
 
 ## Symbiotic Linking
 I use **GNU Stow** to manage my sym linking. For more information, visit the [GNU Stow website](https://www.gnu.org/software/stow/).
