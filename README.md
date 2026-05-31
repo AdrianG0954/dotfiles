@@ -16,12 +16,11 @@ softwareupdate --all --install --force
 # Install developer tools
 xcode-select --install
 
-#Install Homebrew
+# Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-Also, make sure to install all packages specified in the `Brewfile`.
+Also make sure to install all packages specified in the `Brewfile`. Some should be skipped if this is for a professional environment. Review the `BrewFile` to determine what should be kept.
 
-**NOTE:** Some should be skipped if this is for a professional environment. Review the `BrewFile` to determine what should be kept.
 ```
 brew bundle --file=Brewfile
 ```
