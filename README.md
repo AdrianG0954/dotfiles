@@ -15,7 +15,7 @@ xcode-select --install
 #Install Ghostty
 **NOTE:** Right now, I just prefer Ghostty as my terminal emulator. 
 
-To install kitty, visit:
+To install Ghostty, visit:
 ```
 https://ghostty.org/download
 ```
@@ -39,7 +39,6 @@ discord \
 zen \
 warp \
 raycast \
-
 ```
 
 Once thats all done :p, we can actually start setting up the dotfiles.
@@ -63,4 +62,6 @@ stow Brewfile # to connect the brewfiles
 
 stow git # to connect the git
 stow gitconfig # connects gitconfig
+
+stow tmux # connects tmux config
 ```

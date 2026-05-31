@@ -15,7 +15,7 @@ alias cvenv="python3 -m venv .venv"
 alias la="ls -a"
 alias fetch="fastfetch"
 alias src='source ~/.zshrc && echo "zshrc config reloaded ✅"'
-alias stmux='tmux source-file ~/dotfiles/tmux/tmux.conf && echo "tmux config reloaded ✅"'
+alias stmux='tmux source-file ~/.config/tmux/tmux.conf && echo "tmux config reloaded ✅"'
 
 # zsh prompt (using pure)
 autoload -U promptinit; promptinit
