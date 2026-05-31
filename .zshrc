@@ -8,6 +8,11 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH=${PATH}:/usr/local/mysql-9.4.0-macos15-arm64/bin
 export PATH="$HOME/dotfiles/scripts:$PATH"
+export PATH="/opt/homebrew/Cellar/postgresql@18/18.3/bin:$PATH"
+export PATH="$HOME/.local/share/flutter/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+# Gem-installed CLIs (e.g. CocoaPods `pod`) — not in /opt/homebrew/bin by default
+export PATH="$(ruby -e 'print Gem.bindir'):$PATH"
 
 # aliases
 alias evenv="source .venv/bin/activate"
@@ -20,8 +25,8 @@ alias stmux='tmux source-file ~/dotfiles/tmux/tmux.conf && echo "tmux config rel
 
 # zsh prompt
 autoload -U promptinit; promptinit
-zstyle :prompt:pure:path color '#569cd6'
-zstyle :prompt:pure:git:branch color '#9cdcfe'
+zstyle :prompt:pure:path color '#8167f5'
+zstyle :prompt:pure:git:branch color '#56b97f'
 zstyle :prompt:pure:git:dirty color '#d7ba7d'
 zstyle :prompt:pure:virtualenv color '#d7ba7d'
 zstyle :prompt:pure:prompt:success color '#56b97f'
@@ -35,5 +40,3 @@ prompt pure
 
 # auto suggestions
 [[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source ~/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-
