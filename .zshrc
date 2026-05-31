@@ -1,12 +1,6 @@
-# Functions 
-pip_install() {
-    python3 -m pip install --upgrade "$@"
-}
-
 # Paths
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 export PATH="/opt/homebrew/bin:$PATH"
-export PATH=${PATH}:/usr/local/mysql-9.4.0-macos15-arm64/bin
 export PATH="$HOME/dotfiles/scripts:$PATH"
 export PATH="/opt/homebrew/Cellar/postgresql@18/18.3/bin:$PATH"
 export PATH="$HOME/.local/share/flutter/bin:$PATH"
@@ -20,10 +14,10 @@ alias dvenv="deactivate"
 alias cvenv="python3 -m venv .venv"
 alias la="ls -a"
 alias fetch="fastfetch"
-alias src="source ~/.zshrc"
+alias src='source ~/.zshrc && echo "zshrc config reloaded ✅"'
 alias stmux='tmux source-file ~/dotfiles/tmux/tmux.conf && echo "tmux config reloaded ✅"'
 
-# zsh prompt
+# zsh prompt (using pure)
 autoload -U promptinit; promptinit
 zstyle :prompt:pure:path color '#8167f5'
 zstyle :prompt:pure:git:branch color '#56b97f'
@@ -35,8 +29,8 @@ prompt pure
 
 # Plugins
 
-# syntax highlighting 
+# syntax highlighting (zsh prompt)
 [[ -f "$HOME/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source ~/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# auto suggestions
+# auto suggestions (zsh prompt)
 [[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source ~/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

@@ -12,12 +12,20 @@ softwareupdate --all --install --force
 # Install developer tools
 xcode-select --install
 
+#Install Ghostty
+**NOTE:** Right now, I just prefer Ghostty as my terminal emulator. 
+
+To install kitty, visit:
+```
+https://ghostty.org/download
+```
 #Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+Also make sure to install all packages specified in the `Brewfile`.
 
-If not already done, make sure to install all packages specified in the `Brewfile`.
+**NOTE:** Some should be skipped is this is for a professional environment. Review the `BrewFile` to determine what should be kept.
 ```
 brew bundle --file=Brewfile
 ```
@@ -43,5 +51,16 @@ Setting up should be as easy as cloning the repo, setting up the smylinks, and b
 ## Symlinking
 I use **GNU Stow** to manage my sym linking. For more information, visit the [GNU Stow website](https://www.gnu.org/software/stow/).
 
-After linking your dotfiles with Stow, you should see the changes take effect immediately.
+To sym link, clone this repo into your root directory and cd into it. Once there, follow the below:
 
+```bash
+# From the dotfiles directory, run:
+stow Ghostty # to create a symlink for the config
+
+stow .zshrc # to create a symlink for the zsh prompt
+
+stow Brewfile # to connect the brewfiles
+
+stow git # to connect the git
+stow gitconfig # connects gitconfig
+```
