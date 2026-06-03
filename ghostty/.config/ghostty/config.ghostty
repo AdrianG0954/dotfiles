@@ -1,6 +1,12 @@
 font-family = "JetBrainsMono Nerd Font"
 font-size = 20
 theme = "Catppuccin Mocha"
+
 cursor-style = "block"
 cursor-style-blink = true
+
 mouse-hide-while-typing = true
+clipboard-read=allow
+
+keybind = cmd+s=text:\x00\x13
+keybind = cmd+r=text:\x00\x12
