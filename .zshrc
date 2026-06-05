@@ -41,6 +41,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1A --color=always $realpath'
 zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
 source <(carapace _carapace)
 
+# Vi mode within zsh
+[[ -f $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh ]] && source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 # auto suggestions (zsh prompt)
 [[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 

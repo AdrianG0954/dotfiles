@@ -1,6 +1,7 @@
 font-family = "JetBrainsMono Nerd Font"
 font-size = 20
 theme = "Dark+"
+fullscreen = true
 
 cursor-style = "block"
 cursor-style-blink = true
