@@ -30,8 +30,16 @@ prompt pure
 
 # Plugins
 
-# syntax highlighting (zsh prompt)
-[[ -f "$HOME/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source ~/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# fuzzy autocomplete (and styles) 
+autoload -U compinit; compinit
+[[ -f "$HOME/dotfiles/plugins/zsh/fzf-tab/fzf-tab.plugin.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/fzf-tab/fzf-tab.plugin.zsh"
+
+# preview directory's content with eza when completing cd
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1A --color=always $realpath'
 
 # auto suggestions (zsh prompt)
-[[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source ~/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+[[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# syntax highlighting (zsh prompt)
+[[ -f "$HOME/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
