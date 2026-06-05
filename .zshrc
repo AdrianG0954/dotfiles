@@ -29,13 +29,17 @@ zstyle :prompt:pure:execution_time color '#c586c0'
 prompt pure
 
 # Plugins
+autoload -U compinit && compinit
 
 # fuzzy autocomplete (and styles) 
-autoload -U compinit; compinit
 [[ -f "$HOME/dotfiles/plugins/zsh/fzf-tab/fzf-tab.plugin.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/fzf-tab/fzf-tab.plugin.zsh"
 
 # preview directory's content with eza when completing cd
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1A --color=always $realpath'
+
+# Carapace autocomplete (more extensive)
+zstyle ':completion:*' format $'\e[2;37mCompleting %d\e[m'
+source <(carapace _carapace)
 
 # auto suggestions (zsh prompt)
 [[ -f "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" ]] && source "$HOME/dotfiles/plugins/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"

@@ -1,4 +1,5 @@
 tap "hashicorp/tap"
+brew "carapace"
 brew "curl"
 brew "eza"
 brew "fastfetch"
