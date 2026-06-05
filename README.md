@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-First, lets get the basics out the way:
+First, clone this repo in the root directory and get the basics out the way:
 
 **NOTE:** Right now, I just prefer Ghostty as my terminal emulator. 
 To install Ghostty, visit: https://ghostty.org/download
